@@ -1,0 +1,8 @@
+name: start
+on: push
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - run: make setup
+    - run: make test
+    - run: make lint
